@@ -1,0 +1,15 @@
+use_ddp: False   # whether to use DataDistributedParallel, for multi-gpus.
+port:   # the port for the DataDistributedParallel training.
+
+resume: 
+work_dir: "/content/drive/MyDrive/Colab Notebooks/mxfont-main/train_v3"   # the directory to save checkpoints, validation images, and the log.
+
+decomposition: "/content/drive/MyDrive/fewshot-font-generation-main/data/kor/decomposition.json"   # path to the "decomposition rule" file.
+primals: "/content/drive/MyDrive/fewshot-font-generation-main/data/kor/primals.json"   # path to the "primals" file.
+
+dset:   # leave blank
+  train:   # leave blank
+    data_dir: "/content/drive/MyDrive/Colab Notebooks/mxfont-main/data/ttfs/train_jy"   # path to .ttf files for the training
+  val:   # leave blank
+    data_dir: "/content/drive/MyDrive/Colab Notebooks/mxfont-main/data/ttfs/val"   # path to .ttf files for the validation
+    source_font: "/content/drive/MyDrive/Colab Notebooks/mxfont-main/data/ttfs/val/Jeongnimsaji-B.ttf"   # path to the .ttf file used as the source font during the validation
