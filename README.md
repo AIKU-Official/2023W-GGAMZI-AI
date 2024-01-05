@@ -76,9 +76,10 @@
         - 여러 ablation study와 experiment를 통해 확인하는 방식으로 진행
         - 여러 기준으로 데이터를 분류하여 experiment 진행 : 실제 손 글씨와 유사한 스타일, 곡선이 많은 스타일, 굵기, 기울기 등
       - 해결 방식 : 실제 손 글씨와 유사하고 곡선 위주의 데이터셋으로 훈련 시 style 반영도가 증가한다는 점을 발견 후 데이터셋을 재구성
-     <br />   
+       
      - 배경에 노이즈 포함
-       - 해결 방식 : 후처리 방식 고안 → morphological transformation, Alpha blending 기법 활용하여 해결
+       - 해결 방식
+         - 후처리 방식 고안 → morphological transformation, Alpha blending 기법 활용하여 해결
       
 
 
