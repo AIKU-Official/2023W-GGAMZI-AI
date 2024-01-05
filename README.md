@@ -85,7 +85,7 @@
 <div align="center">
     <img src="images/result.png" alt="Result" width="1000" height="500">
 
-    👉 왼쪽이 reference images, 오른쪽이 생성 결과
+    <h3 align = "center">👉 왼쪽이 reference images, 오른쪽이 생성 결과</h3>
 </div>
 
 ## Team Members & Roles
