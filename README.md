@@ -54,11 +54,13 @@
   * 입력 : Reference 이미지 4장, source language로 사용되는 글꼴, 생성하고 싶은 text 내용
  
 ## Contribution
- * **pretrained model이 한글의 여러 component 중 ㅇ,ㅎ 생성에 한계를 가진다는 점을 발견**
+ * **Pretrained model이 한글의 여러 component 중 ㅇ,ㅎ 생성에 한계를 가진다는 점을 발견**
    <br />
    → 여러 차례의 훈련을 진행하면서 <a href="#problem-with-training">발견되는 문제점</a>을 참고하여 체계적으로 한글 폰트 데이터를 라벨링하고 분류하여 해결
    <a name="problem-with-training"></a>
+   
  * **한글 데이터로 훈련하였을 때 발생한 문제점 및 해결 방식**
+   <br />
    - 한글에 존재하지 않는 component 생성
      - 원인 분석
        - 모델 구조 중 최대 이분 매칭 알고리즘을 한글에 적용하여 원인을 분석 → overfitting으로 결론
@@ -68,13 +70,13 @@
      - 해결 방식 
        - 여러 component로 분류될 여지가 있는 feature를 포함하는 특이한 데이터셋(out of distribution dataset)을 과감히 배제
        - 훈련 데이터의 다양성을 낮추어 학습
-     
+     <br />
     - 스타일 반영도가 떨어짐
       - 원인 분석
         - 여러 ablation study와 experiment를 통해 확인하는 방식으로 진행
         - 여러 기준으로 데이터를 분류하여 experiment 진행 : 실제 손 글씨와 유사한 스타일, 곡선이 많은 스타일, 굵기, 기울기 등
       - 해결 방식 : 실제 손 글씨와 유사하고 곡선 위주의 데이터셋으로 훈련 시 style 반영도가 증가한다는 점을 발견 후 데이터셋을 재구성
-        
+     <br />   
      - 배경에 노이즈 포함
        - 해결 방식 : 후처리 방식 고안 → morphological transformation, Alpha blending 기법 활용하여 해결
       
