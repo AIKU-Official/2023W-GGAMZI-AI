@@ -33,6 +33,7 @@
 
 * 깜지를 대신 작성해주는 생성 모델을 만들어보자는 동기에서 시작하였습니다.
 * 한글이 아닌, 한자나 중국어 데이터에 특화되어 있는 선행 모델들의 한계점을 해결하고자 했습니다.
+## Installation
 
 ## Modeling
 * MX-Font (ICCV 2021)을 차용하였습니다. <a href="https://github.com/clovaai/mxfont">Link</a>
