@@ -38,9 +38,9 @@
 * MX-Font (ICCV 2021)을 차용하였습니다. <a href="https://github.com/clovaai/mxfont">Link</a>
 * Training
   * Dataset
-    - 무료 폰트 사이트에서 수집한 약 312개의 폰트 파일(.ttf) <a href="https://noonnu.cc/#google_vignette">눈누</a> <a href="https://www.ownglyph.com/notice">온글잎</a> <a href="https://hangeul.naver.com/">한글한글아름답게</a>
-    - 공개되어 있는 필기체 데이터셋 및 직접 수집한 손글씨 이미지 데이터 (.png, .jpeg) <a href="https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=71307">개인 특정을 위한 자필과 모사 필기체 데이터</a>
-    _For more datasets that we used for training, please email us at kplove01@naver.com
+    - 무료 폰트 사이트에서 수집한 약 312개의 폰트 파일(.ttf) <a href="https://noonnu.cc/#google_vignette">눈누</a>   <a href="https://www.ownglyph.com/notice">온글잎</a>   <a href="https://hangeul.naver.com/">한글한글 아름답게</a>
+    - 공개되어 있는 필기체 데이터셋 및 직접 수집한 손글씨 이미지 데이터 (.png, .jpeg)   <a href="https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=71307">개인 특정을 위한 자필과 모사 필기체 데이터</a>
+    _For more datasets that we used for training, please email us at kplove01@naver.com_
 * Inference
   * 입력 : Reference 이미지 4장, source language로 사용되는 글꼴, 생성하고 싶은 text 내용
   * I2I(image-to-image) translation 방식으로 target domain에 맞도록 style을 transfer하면서 source domain의 content를 유지하는 매핑을 학습하는 방식입니다.
