@@ -54,9 +54,10 @@
   * 입력 : Reference 이미지 4장, source language로 사용되는 글꼴, 생성하고 싶은 text 내용
  
 ## Contribution
- * pretrained model이 한글의 여러 component 중 ㅇ,ㅎ 생성에 한계를 가진다는 점을 발견
+ * **pretrained model이 한글의 여러 component 중 ㅇ,ㅎ 생성에 한계를 가진다는 점을 발견**
    → 여러 차례의 훈련을 진행하면서 <a href="#problem-with-training">발견되는 문제점</a>을 참고하여 체계적으로 한글 폰트 데이터를 라벨링하고 분류하여 해결
- * 한글 데이터로 훈련하였을 때 <a name="problem-with-training">발생한 문제점</a>
+   
+ * **한글 데이터로 훈련하였을 때 <a name="problem-with-training">발생한 문제점</a>**
    1. 한글에 존재하지 않는 component 생성
      - 원인 분석
        - 모델 구조 중 최대 이분 매칭 알고리즘을 한글에 적용하여 원인을 분석 → overfitting으로 결론
