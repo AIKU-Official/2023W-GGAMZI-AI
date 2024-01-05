@@ -31,7 +31,6 @@
   </ol>
 </details>
 <br />
-
 * 깜지를 대신 작성해주는 생성 모델을 만들어보자는 동기에서 시작하였습니다.
 * 한글이 아닌, 한자나 중국어 데이터에 특화되어 있는 선행 모델들의 한계점을 해결하고자 했습니다.
 
@@ -39,8 +38,15 @@
 * MX-Font (ICCV 2021)을 차용하였습니다. <a href="https://github.com/clovaai/mxfont">Link</a>
 * Training
   * Dataset
-    - 무료 폰트 사이트에서 수집한 약 312개의 폰트 파일(.ttf)
-    - 공개되어 있는 필기체 데이터셋 및 직접 수집한 손글씨 이미지 데이터 (.png, .jpeg)
+    - 무료 폰트 사이트에서 수집한 약 312개의 폰트 파일(.ttf) <a href="https://noonnu.cc/#google_vignette">눈누</a> <a href="https://www.ownglyph.com/notice">온글잎</a> <a href="https://hangeul.naver.com/">한글한글아름답게</a>
+    - 공개되어 있는 필기체 데이터셋 및 직접 수집한 손글씨 이미지 데이터 (.png, .jpeg) <a href="https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=71307">개인 특정을 위한 자필과 모사 필기체 데이터</a>
+    _For more datasets that we used for training, please email us at kplove01@naver.com
+* Inference
+  * 입력 : Reference 이미지 4장, source language로 사용되는 글꼴, 생성하고 싶은 text 내용
+  * I2I(image-to-image) translation 방식으로 target domain에 맞도록 style을 transfer하면서 source domain의 content를 유지하는 매핑을 학습하는 방식입니다.
+  * weak supervision으로 글자 구성 요소(component)를 학습하여 unseen data에 대한 성능을 올렸습니다
+    - 여러 개의 인코더(multiple-headed experts)로 content와 style을 분리하여 학습합니다.
+    - 최대 이분 매칭, 헝가리안 알고리즘을 활용하여 component-specific하게 훈련되는 것을 방지합니다.
   
 
 
