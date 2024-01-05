@@ -55,6 +55,7 @@
  
 ## Contribution
  * **pretrained model이 한글의 여러 component 중 ㅇ,ㅎ 생성에 한계를 가진다는 점을 발견**
+   <br />
    → 여러 차례의 훈련을 진행하면서 <a href="#problem-with-training">발견되는 문제점</a>을 참고하여 체계적으로 한글 폰트 데이터를 라벨링하고 분류하여 해결
    <a name="problem-with-training"></a>
  * **한글 데이터로 훈련하였을 때 발생한 문제점 및 해결 방식**
