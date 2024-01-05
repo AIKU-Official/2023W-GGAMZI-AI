@@ -54,12 +54,12 @@
   * 입력 : Reference 이미지 4장, source language로 사용되는 글꼴, 생성하고 싶은 text 내용
  
 ## Contribution
- 1. **Pretrained model이 한글의 여러 component 중 ㅇ,ㅎ 생성에 한계를 가진다는 점을 발견**
+ * **Pretrained model이 한글의 여러 component 중 ㅇ,ㅎ 생성에 한계를 가진다는 점을 발견**
    <br />
    → 여러 차례의 훈련을 진행하면서 <a href="#problem-with-training">발견되는 문제점</a>을 참고하여 체계적으로 한글 폰트 데이터를 라벨링하고 분류하여 해결
    <a name="problem-with-training"></a>
    
- 2. **한글 데이터로 훈련하였을 때 발생한 문제점 및 해결 방식**
+ * **한글 데이터로 훈련하였을 때 발생한 문제점 및 해결 방식**
    <br />
    - 한글에 존재하지 않는 component 생성
      - 원인 분석
@@ -80,6 +80,22 @@
      - 배경에 노이즈 포함
        - 해결 방식
          - 후처리 방식 고안 → morphological transformation, Alpha blending 기법 활용하여 해결
+
+## Results
+<div align="center">
+    <img src="images/result.png" alt="Result" width="500" height="500">
+
+    _왼쪽이 reference images, 오른쪽이 생성 결과_
+  </a>
+
+## Team Members & Roles
+- 박서현 : 프로젝트 주제 발제, 모델 조사 및 학습, 데이터셋 조사 및 분류,  후처리 등
+- 오윤진 : 모델 조사 및 학습, 훈련 결과 시각화, 웹 데모 구성, 후처리 등
+- 김지영 : 모델 조사 및 학습, 모델 조사 및 학습, 모델 추가 훈련, 데이터셋 조사 등
+- 민재원 : 방향성 제시 및 자문
+
+
+
       
 
 
