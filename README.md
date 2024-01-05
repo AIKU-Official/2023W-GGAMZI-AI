@@ -84,9 +84,8 @@
 ## Results
 <div align="center">
     <img src="images/result.png" alt="Result" width="1000" height="500">
-
-    <h3 align = "center">👉 왼쪽이 reference images, 오른쪽이 생성 결과</h3>
 </div>
+👉왼쪽이 reference images, 오른쪽이 생성 결과
 
 ## Team Members & Roles
 - 박서현 : 프로젝트 주제 발제, 모델 조사 및 학습, 데이터셋 조사 및 분류,  후처리 등
