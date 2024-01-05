@@ -24,8 +24,6 @@
 ## About The Project
 * 깜지 AI는 개개인의 손 글씨 스타일을 모사하여 원하는 내용을 생성하는 FFG(Few-shot handwriting Font Generation) task 수행 모델입니다.
 
-  <br />
-  <br />
 <details>
   <summary>📌 Few-shot fong Generation </summary>
   <ol>
